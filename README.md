@@ -23,41 +23,45 @@ O objetivo é simular batalhas entre jogadores em um coliseu, com atributos como
 
 ### ➕ Criar um novo Coliseu
 
-INSERT INTO rpg_battle(title_battle) 
-VALUES ("Coliseu Charmosa");
+    INSERT INTO rpg_battle(title_battle) 
+    VALUES ("Coliseu Charmosa");
 
 ### 🔄 Adicionar um turno à batalha de ID 1 (começando pelo jogador de ID 1)
 
-INSERT INTO rpg_battle_turn(rpg_battle_id, current_player) 
-VALUES (1, 1);
+    INSERT INTO rpg_battle_turn(rpg_battle_id, current_player) 
+    VALUES (1, 1);
 
 ### ▶️ Iniciar a batalha
 
 Atualize o status da batalha de ESPERA para ATIVA:
 
-UPDATE rpg_battle 
-SET status_battle = 'ATIVA' 
-WHERE id_battle = 1;
+    UPDATE rpg_battle 
+    SET status_battle = 'ATIVA' 
+    WHERE id_battle = 1;
+
+---
 
 ### ⚠️ Observação Importante
 
 Atualmente não existe tela de criação de salas.
 Portanto, a criação de batalhas e turnos deve ser feita diretamente no MySQL utilizando os comandos acima.
 
-### 🕹️ Recursos do Sistema
+---
 
-    🎯 Sistema de turnos (cada jogador joga na sua vez).
+## 🕹️ Recursos do Sistema
 
-    💥 Cálculo de dano com chance de crítico.
+🎯 Sistema de turnos (cada jogador joga na sua vez).
 
-    🛡️ Defesa e atributos básicos já aplicados.
+💥 Cálculo de dano com chance de crítico.
 
-    🏟️ Batalhas em coliseus configurados manualmente.
+🛡️ Defesa e atributos básicos já aplicados.
 
-### 🚀 Tecnologias Utilizadas
+🏟️ Batalhas em coliseus configurados manualmente.
 
-    🐘 PHP
+## 🚀 Tecnologias Utilizadas
 
-    🗄️ MySQL
+🐘 PHP
 
-    ⚡ XAMPP / WAMP (servidor local)
+🗄️ MySQL
+
+⚡ XAMPP / WAMP (servidor local)
